@@ -33,7 +33,7 @@ public class Sentence1 {
                 len -= 1;
             }
             //-----
-            if (len > pos) {
+            if (len >= pos) {  // если нужно просто >
                 String[] wordChars = getChars(word);
                 wordChars[pos - 1] = newChar;
                 words[i] = String.join("", wordChars);

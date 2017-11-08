@@ -24,7 +24,7 @@ public class Sentence
         for(int i = 0; i < words.length; i++) {
 
                 String word = words[i];
-                if (word.length() >  pos) {
+                if (word.length() >= pos) {
                     String[] wordChars = getChars(word);
                     if (!checkChar(wordChars[pos-1])) {
                         wordChars[pos - 1] = newChar;
